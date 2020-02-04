@@ -2,6 +2,10 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 
 import img from '../img/Africa picture2.png';
+import img1 from '../img/img1/home.png';
+import img2 from '../img/img2/signIn.png';
+import img3 from  '../img/img3/login.png';
+import img4 from '../img/img4/productList.png';
 
 import styled from "styled-components";
 
@@ -15,10 +19,10 @@ import styled from "styled-components";
        <NavBar>
            <img src={img}alt="Africa" className="navbar-logo"/>
            <h1> Africa MarketPlace</h1>
-           <NavLink to="/">Home</NavLink>
-           <NavLink to="/sign In">Sign In</NavLink>
-           <NavLink to="/login">Login</NavLink>
-           <NavLink to="/productList">ProductList</NavLink>
+           <NavLink to="/"><img src={img1} alt="Home" className="navbar-img1"></img></NavLink>
+           <NavLink to="/sign In"><img src={img2} alt="Sign In" className="navbar-img2"></img></NavLink>
+           <NavLink to="/login"><img src={img3} alt="Login" className="navbar-img3"></img></NavLink>
+           <NavLink to="/productList"><img src={img4} alt="ProductList" className="navbar-img4"></img></NavLink>
        </NavBar>
     );
 }
