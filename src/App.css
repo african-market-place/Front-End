@@ -1,0 +1,35 @@
+:root {
+  --mainGray:#bdc3c7;
+  --white:#F0F2F0;
+}
+
+
+body {
+  font-family:'Oswald', sans-serif;
+  background: #bdc3c7;
+
+}
+
+
+.home-image{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+.shop-button.md-button {
+  margin-top: -16px;
+  width: 115px;
+}
+
+/* .md-button  {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-radius: 3px;
+  vertical-align: middle;
+  text-align: center;
+  text-shadow: 5px 5px 3px #333;
+} */
+
