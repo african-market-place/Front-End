@@ -1,6 +1,8 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 
+import img from '../img/Africa picture2.png';
+
 import styled from "styled-components";
 
  function Nav(){
@@ -11,8 +13,10 @@ import styled from "styled-components";
 
     return(
        <NavBar>
-           {/* <h1> Africa MarketPlace</h1> */}
-           <NavLink to="/">Sign up</NavLink>
+           <img src={img}alt="Africa" className="navbar-logo"/>
+           <h1> Africa MarketPlace</h1>
+           <NavLink to="/">Home</NavLink>
+           <NavLink to="/sign In">Sign In</NavLink>
            <NavLink to="/login">Login</NavLink>
            <NavLink to="/productList">ProductList</NavLink>
        </NavBar>
@@ -42,9 +46,17 @@ const NavBar = styled.nav`
  }
 
  &:hover {
-     background: #FFF;
-     text-decoration: underline;
+      background: #FFF; 
+     text-decoration: underline; 
  }
 
+h1{
+    color:${props => props.inputColor || "#4286f4"};
+    text-decoration: none;
+    font-size:25px;
+}
 
+.navbar-logo{
+    display:flex;
+} 
 `;
