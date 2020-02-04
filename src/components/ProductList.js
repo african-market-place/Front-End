@@ -2,7 +2,8 @@ import React, {useState, useEffect} from "react";
 
 import axios from 'axios';
 
-import Card from './Card';
+// import Card from './Card';
+import Product from './Product';
 import SearchForm from "./SearchForm";
 
 
@@ -41,7 +42,7 @@ export default function ProductList(){
         <div className="product-list-wrapper">
             <SearchForm changeHandler={changeHandler}/>
             {products.map((product) =>{
-                return<Card key={product.id} card={product}/>
+                return<Product key={product.id} card={product}/>
             })}
         </div>
     );
