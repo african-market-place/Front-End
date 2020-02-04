@@ -19,7 +19,8 @@ export default function SearchForm(props) {
 
 const StyledDiv=Styled.div`
    display: flex;
-   justify-content:center;
+   justify-content:space-evenly;
+   padding: 8px;
    background-color: white;
 
    input{
