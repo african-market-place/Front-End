@@ -22,7 +22,7 @@ const StyledDiv=Styled.div`
    display: flex;
    justify-content:space-evenly;
    padding: 8px;
-   background-color: white;
+   background-color: #79868f;
 
    input{
        color: ${props=>props.inputColor || "#bdc3c7"};
