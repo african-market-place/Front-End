@@ -125,7 +125,7 @@ export default function AddProduct({setNewProductId}){
     return (
         <StyledAdd>
             <div className="addProduct">
-            <p>Forms are here</p>
+           
             <Formik
             initialValues={{name:'', product:'',description:'',price:'',location:'',category:''}}
             onSubmit={handleSubmit}
@@ -187,26 +187,41 @@ export default function AddProduct({setNewProductId}){
   display: flex;
   flex-direction: column;
   align-items:center;
+  padding: 15px;
+  margin: 16px auto;
+  text-align: center;
+  width: 350px;
+  
+   
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 5px 2px rgba(0, 0, 0, 0.24); */
 
-  & form{
+  
+
+  & form {
       display:flex;
-      flex-direction: column;
+      /* flex-direction: column; */
+      align-items: center;
+      flex-flow: column nowrap;
 
-   & field{
-       color: ${props=>props.inputColor || "#e9d362"};
-       border-radius: 3px;
-       line-height:24px;
-
-   }
+  
    & button{
        border-radius:2px;
-       padding:5px;
+       /* padding:5px; */
        background: transparent;
        transition: 0.9s ease-in-out;
+       padding: 10px 15px;
+       font-size: 16px;
+       box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.12), 0 2px 2px 1px rgba(0, 0, 0, 0.24);
+       transition: all 0.2 ease-in;
+       
+       
        &:hover{
            cursor:pointer;
+           transform: translateY(-1px);
+           box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.12), 0 2px 3px 2px rgba(0, 0, 0, 0.24);
            
        }
+
    }
 
   }
