@@ -34,14 +34,7 @@ export default function LoginForm() {
               name='username'
               placeholder='Enter your username here'
             />
-            <ErrorMessage name='location' component='div' className='error' />
-            <label htmlFor='user_location'>Location</label>
-            <Field
-              type='text'
-              id='user_location'
-              name='location'
-              placeholder='Enter your location here'
-            />
+
             <ErrorMessage name='password' component='div' className='error' />
             <label htmlFor='user_password'>Password</label>
             <Field
@@ -59,12 +52,10 @@ export default function LoginForm() {
 }
 const validationSchema = Yup.object().shape({
   username: Yup.string().required("Please enter a username"),
-  location: Yup.string().required("Please enter a location"),
   password: Yup.string().required("Please enter a password")
 });
 const initialState = {
   username: "",
-  location: "",
   password: ""
 };
 const StyledForm = styled.div`
@@ -117,6 +108,6 @@ const StyledForm = styled.div`
     border-radius: 3px;
   }
   error {
-    color : red;
+    color: red;
   }
 `;
