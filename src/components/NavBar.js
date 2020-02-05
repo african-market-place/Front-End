@@ -21,10 +21,9 @@ import styled from "styled-components";
            <img src={img}alt="Africa" className="navbar-logo"/>
            <h1> Africa MarketPlace</h1>
            <NavLink to="/"><img src={img1} alt="Home" className="navbar-img1"></img></NavLink>
-           <NavLink to="/sign In"><img src={img2} alt="Sign In" className="navbar-img2"></img>/User</NavLink>
            <NavLink to="/login"><img src={img3} alt="Login" className="navbar-img3"></img></NavLink>
-           <NavLink to="/addProduct"><img src={img6} alt="addProduct" className="navbar-img6"></img></NavLink>
-           <NavLink to="/productList"><img src={img4} alt="ProductList" className="navbar-img4"></img></NavLink>
+           <NavLink to="/add-product"><img src={img6} alt="addProduct" className="navbar-img6"></img></NavLink>
+           <NavLink to="/products"><img src={img4} alt="ProductList" className="navbar-img4"></img></NavLink>
        </NavBar>
     );
 }
@@ -52,14 +51,15 @@ const NavBar = styled.nav`
  }
 
  &:hover {
-      /* background: #FFF;  */
+      background: #79868f; 
      text-decoration: underline; 
+     
  }
 
 h1{
     color:${props => props.inputColor || "#4286f4"};
     text-decoration: none;
-    font-size:25px;
+    font-size:30px;
 }
 
 .navbar-logo{
