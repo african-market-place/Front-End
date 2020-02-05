@@ -17,10 +17,10 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
-.shop-button.md-button {
+/* .shop-button.md-button {
   margin-top: -16px;
   width: 115px;
-}
+} */
 
 /* .md-button  {
   position: relative;
@@ -32,4 +32,10 @@ body {
   text-align: center;
   text-shadow: 5px 5px 3px #333;
 } */
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
 
