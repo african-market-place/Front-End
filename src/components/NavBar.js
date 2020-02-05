@@ -6,6 +6,7 @@ import img1 from '../img/img1/home.png';
 import img2 from '../img/img2/signIn.png';
 import img3 from  '../img/img3/login.png';
 import img4 from '../img/img4/productList.png';
+import img6 from '../img/img6/addProduct.png';
 
 import styled from "styled-components";
 
@@ -22,6 +23,7 @@ import styled from "styled-components";
            <NavLink to="/"><img src={img1} alt="Home" className="navbar-img1"></img></NavLink>
            <NavLink to="/sign In"><img src={img2} alt="Sign In" className="navbar-img2"></img>/User</NavLink>
            <NavLink to="/login"><img src={img3} alt="Login" className="navbar-img3"></img></NavLink>
+           <NavLink to="/addProduct"><img src={img6} alt="addProduct" className="navbar-img6"></img></NavLink>
            <NavLink to="/productList"><img src={img4} alt="ProductList" className="navbar-img4"></img></NavLink>
        </NavBar>
     );
