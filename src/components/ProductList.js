@@ -7,7 +7,7 @@ import Product from './Product';
 import SearchForm from "./SearchForm";
 
 
-export default function ProductList(){
+export default function ProductList(props){
     //set up the slice of state and the setter function
     const[products, setProducts]=useState([]);
     const[searchResults, setSearchResults]=useState([]);
@@ -15,10 +15,10 @@ export default function ProductList(){
     useEffect(() =>{
         //were axios and side effects are living here
         axios
-        .get('')
+        .get('https://africanmarketplacebackend.herokuapp.com/api/items')
         .then(response =>{
-            console.log(response.data);
-            setProducts(response.data.results);
+            console.log(response);
+            setProducts(response.data);
             setSearchResults(response.data.results);
         })
         .catch(error =>{
@@ -41,8 +41,8 @@ export default function ProductList(){
     return(
         <div className="product-list-wrapper">
             <SearchForm changeHandler={changeHandler}/>
-            {products.map((product) =>{
-                return<Product key={product.id} card={product}/>
+            {products.map((product, index) =>{
+                return<Product key={index} product={product}/>
             })}
         </div>
     );
