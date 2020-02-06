@@ -10,7 +10,7 @@ export default function LoginForm() {
     console.log(values);
     axios
       .post(
-        "https://africanmarketplacebackend.herokuapp.com/api/auth/login",
+        "https://backendeuafrica.herokuapp.com/api/auth/login",
         values
       )
       .then(response => {
