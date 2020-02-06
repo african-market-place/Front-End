@@ -1,20 +1,20 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Link, useHistory } from "react-router-dom";
 import * as Yup from "yup";
 import axios from "axios";
 import styled from "styled-components";
 // import keyframes from "styled-components";
 
 export default function LoginForm() {
+  const history = useHistory();
   function handleSubmit(values, actions) {
     console.log(values);
     axios
-      .post(
-        "https://backendeuafrica.herokuapp.com/api/auth/login",
-        values
-      )
+      .post("https://backendeuafrica.herokuapp.com/api/auth/login", values)
       .then(response => {
         console.log(response.data);
+        history.push("/Products");
         actions.resetForm();
       })
       .catch(error => console.log(error.response.data))
@@ -25,32 +25,35 @@ export default function LoginForm() {
 
   return (
     <StyledForm>
-      <div className="LoginForm">
+      <div className='LoginForm'>
         <h1>Africa MarketPlace LoginForm</h1>
         <Formik
           onSubmit={handleSubmit}
           validationSchema={validationSchema}
-          initialValues={initialState}
-        >
+          initialValues={initialState}>
           <Form>
-            <ErrorMessage name="username" component="div" className="error" />
-            <label htmlFor="user_username">Username</label>
+            <ErrorMessage name='username' component='div' className='error' />
+            <label htmlFor='user_username'>Username</label>
             <Field
-              type="text"
-              id="user_username"
-              name="username"
-              placeholder="Enter your username here"
+              type='text'
+              id='user_username'
+              name='username'
+              placeholder='Enter your username here'
             />
 
-            <ErrorMessage name="password" component="div" className="error" />
-            <label htmlFor="user_password">Password</label>
+            <ErrorMessage name='password' component='div' className='error' />
+            <label htmlFor='user_password'>Password</label>
             <Field
-              type="password"
-              id="user_password"
-              name="password"
-              placeholder="Enter your password here"
+              type='password'
+              id='user_password'
+              name='password'
+              placeholder='Enter your password here'
             />
-            <button type="submit">Log-in</button>
+            <button type='submit'>Log-in</button>
+            <p>
+              Not register yet? <br />
+              <Link to='/signUp'> Register here </Link>
+            </p>
           </Form>
         </Formik>
       </div>
@@ -83,6 +86,9 @@ const StyledForm = styled.div`
   }
   & field {
     background: #d7dde8;
+  }
+  & p {
+    color: white;
   }
   & button {
     background: #f0f2f0;
