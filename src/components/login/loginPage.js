@@ -9,12 +9,18 @@ export default function LoginForm() {
   function handleSubmit(values, actions) {
     console.log(values);
     axios
-      .post("", values)
+      .post(
+        "https://africanmarketplacebackend.herokuapp.com/api/auth/login",
+        values
+      )
       .then(response => {
         console.log(response.data);
         actions.resetForm();
       })
-      .catch(error => console.log(error));
+      .catch(error => console.log(error.response.data))
+      .finally(() => {
+        console.log("done");
+      });
   }
 
   return (
