@@ -28,7 +28,7 @@ export default function SignUpForm() {
           onSubmit={handleSubmit}
           validationSchema={validationSchema}
           initialValues={initialState}>
-          <Form>
+          <Form onClick={() => {}}>
             <ErrorMessage name='username' component='div' className='error' />
             <label htmlFor='user_username'>Username</label>
             <Field
@@ -51,7 +51,7 @@ export default function SignUpForm() {
               Already have an account? <br />
               Login here
             </p>
-            <button type='submit'>Sign Up</button>
+            <button type='submit'>Log in</button>
           </Form>
         </Formik>
       </div>
