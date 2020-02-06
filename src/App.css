@@ -39,3 +39,61 @@ form {
   align-items: center;
 }
 
+.product-list-wrapper {
+  display: flex;
+  flex-wrap:wrap;
+  margin: 5%;
+}
+
+
+
+/* ROYAL KITCHEN UI */
+
+/* ITEM CARD */
+.product-list-wrapper {
+  border-radius: 6px;
+  position: relative;
+  margin-right: 0 auto;
+  /* height: 22.5rem; */
+}
+.product-list-wrapper {
+  box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
+}
+.product-list-wrapper p{
+  text-decoration: none;
+  transition: color 0.3s ease;
+  border-bottom: none; 
+  color: #525c65;
+}
+.product-list-wrapper h1{
+  height: 200px;
+  background-image: url('https://unsplash.com/photos/5eGas109xp4');
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+.product-list-wrapper h1{
+  border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	height: 9.75em;
+	width: 100%;
+	z-index: 4000;
+}
+.pill {
+  color: #fff;
+	position: relative;
+	top: 5px;
+	left: 5px;
+	background-color: #aa8553;
+	font-size: 0.8125em;
+	line-height: 1.5em;
+	height: 1.5em;
+	padding: 5px 5px;
+	border-radius: 4px;
+	letter-spacing: .03em;
+	z-index: 5000;
+  text-transform: uppercase;
+  box-shadow: 4px 6px 8px 0px rgba(46,61,73,0.2);
+}
