@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import axios from 'axios';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
-import Product from './components/Product';
 import ProductList from './components/ProductList';
 import LoginForm from "./components/login/loginPage";
 import SignUpForm from './components/login/signUp'
