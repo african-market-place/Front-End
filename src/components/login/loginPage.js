@@ -19,31 +19,32 @@ export default function LoginForm() {
 
   return (
     <StyledForm>
-      <div className='LoginForm'>
+      <div className="LoginForm">
         <h1>Africa MarketPlace LoginForm</h1>
         <Formik
           onSubmit={handleSubmit}
           validationSchema={validationSchema}
-          initialValues={initialState}>
+          initialValues={initialState}
+        >
           <Form>
-            <ErrorMessage name='username' component='div' className='error' />
-            <label htmlFor='user_username'>Username</label>
+            <ErrorMessage name="username" component="div" className="error" />
+            <label htmlFor="user_username">Username</label>
             <Field
-              type='text'
-              id='user_username'
-              name='username'
-              placeholder='Enter your username here'
+              type="text"
+              id="user_username"
+              name="username"
+              placeholder="Enter your username here"
             />
 
-            <ErrorMessage name='password' component='div' className='error' />
-            <label htmlFor='user_password'>Password</label>
+            <ErrorMessage name="password" component="div" className="error" />
+            <label htmlFor="user_password">Password</label>
             <Field
-              type='password'
-              id='user_password'
-              name='password'
-              placeholder='Enter your password here'
+              type="password"
+              id="user_password"
+              name="password"
+              placeholder="Enter your password here"
             />
-            <button type='submit'>Log-in</button>
+            <button type="submit">Log-in</button>
           </Form>
         </Formik>
       </div>
