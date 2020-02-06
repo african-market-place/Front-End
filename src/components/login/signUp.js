@@ -1,17 +1,20 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Link, useHistory } from "react-router-dom";
 import * as Yup from "yup";
 import axios from "axios";
 import styled from "styled-components";
 // import keyframes from "styled-components";
 
 export default function SignUpForm() {
+  const history = useHistory();
   function handleSubmit(values, actions) {
     console.log(values);
     axios
       .post("https://backendeuafrica.herokuapp.com/api/auth/register", values)
       .then(response => {
         console.log(response.data);
+        history.push("/login");
         actions.resetForm();
       })
       .catch(error => console.log(error.response.data))
@@ -49,15 +52,15 @@ export default function SignUpForm() {
             <button type='submit'>Sign Up</button>
             <p>
               Already have an account? <br />
-              Login here
+              <Link to='/login'> Login here </Link>
             </p>
-            <button type='submit'>Log in</button>
           </Form>
         </Formik>
       </div>
     </StyledForm>
   );
 }
+
 const validationSchema = Yup.object().shape({
   username: Yup.string().required("Please enter a username"),
   password: Yup.string().required("Please enter a password")
@@ -84,6 +87,9 @@ const StyledForm = styled.div`
   }
   & field {
     background: #d7dde8;
+  }
+  & p {
+    color: white;
   }
   & button {
     background: #f0f2f0;
