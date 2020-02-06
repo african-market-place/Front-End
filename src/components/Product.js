@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+import img7 from '../img/im7/Dollar-16.png';
 
 import styled from "styled-components";
 import {keyframes} from "styled-components";
@@ -8,11 +8,10 @@ import {keyframes} from "styled-components";
 export default function Item(props){
     return(
         <Product>
-            <h2>{props.product.name}</h2>
-            <h2>Name:{props.product.name}</h2>
-            <h2>Price:{props.product.price}</h2>
-            <h2>Location:{props.product.location}</h2>
-            <h2>Category:{props.product.category}</h2>
+            <h1>{props.product.name}</h1>
+            <p className="pill">{props.product.price}</p>
+            <p>Location:{props.product.location}</p>
+            <p>Category:{props.product.category}</p>
         </Product>
     );
 }
@@ -22,7 +21,8 @@ display: flex;
 justify-content:center;
 flex-direction: column;
 align-items: center;
-margin: 5% auto;
+margin: 5%;
+width: 20%;
 color: ${props=>props.inputColor || "#f2fcfe"};
 background:#bdc3c7;
 height: 450px;
@@ -32,7 +32,6 @@ box-sizing: border-box;
 border: 5px white solid;
 border-radius: 4px;
 overflow: hidden;
-max-width: 700px;
 box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 animation: fadeInUp 0.6s forwards;
 cursor: pointer;
