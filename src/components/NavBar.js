@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom';
 
 import img from '../img/Africa picture2.png';
 import img1 from '../img/img1/home.png';
-import img2 from '../img/img2/signIn.png';
+// import img2 from '../img/img2/signIn.png';
 import img3 from  '../img/img3/login.png';
 import img4 from '../img/img4/productList.png';
 import img6 from '../img/img6/addProduct.png';
