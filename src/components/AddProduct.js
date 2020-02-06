@@ -5,6 +5,8 @@ import {useHistory} from 'react-router-dom';
 
 import styled from "styled-components";
 
+import img10 from '../img/img10/AfricaFlag.png';
+
 export default function AddProduct({ setNewProductId }) {
     const history=useHistory()
   function handleSubmit(values, actions) {
@@ -31,6 +33,7 @@ export default function AddProduct({ setNewProductId }) {
   return (
     <StyledAdd>
       <div className="addProduct">
+      <img src={img10} alt="flag" className="navbar-img10"></img>
         <Formik
           initialValues={{
             name: "",
@@ -89,22 +92,25 @@ export default function AddProduct({ setNewProductId }) {
 }
 
 const StyledAdd = styled.div`
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px;
+  padding: 100px;
   margin: 16px auto;
   text-align: center;
-  width: 350px;
+  background-size: 100% 100%;
+  background-image: url("https://www.pinclipart.com/picdir/big/384-3848811_african-animals-vinyl-wall-art-2083x2083-png-download.png");
 
   & form {
     display: flex;
     /* flex-direction: column; */
     align-items: center;
     flex-flow: column nowrap;
+    margin: 16px auto;
 
     & button {
-      border-radius: 2px;
+      border-radius: 3px;
       /* padding:5px; */
       background: transparent;
       transition: 0.9s ease-in-out;
@@ -117,9 +123,17 @@ const StyledAdd = styled.div`
       &:hover {
         cursor: pointer;
         transform: translateY(-1px);
-        box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.12),
+        text-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.12),
           0 2px 3px 2px rgba(0, 0, 0, 0.24);
       }
+      field {
+    width: 255px;
+    padding: 15px 20px;
+    margin: 20px 15px;
+    box-sizing: border-box;
+    border: 2px solid #a8c0ff;
+    border-radius: 3px;
+  }
     }
   }
 `;
