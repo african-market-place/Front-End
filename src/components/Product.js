@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 import img8 from '../img/img8/location1.png';
 import img9 from '../img/img9/category1png';
 
@@ -10,7 +11,7 @@ export default function Item(props){
         <Product>
             <h1>{props.product.name}</h1>
             <img className="card-img" src="https://images.unsplash.com/photo-1562823159-ad2c5bd36cf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="cardImage"/>
-            <p className="pill"> ${props.product.price}</p>
+            <p className="pill"> ₦ {props.product.price}</p>
             <p className="place"><img src={img8} alt="Home" className="navbar-img1"></img>{props.product.location}</p>
             <p className="group"><img src={img9} alt="Home" className="navbar-img1"></img>{props.product.category}</p>
         </Product>
