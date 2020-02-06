@@ -3,7 +3,7 @@ import React from 'react';
 import img8 from '../img/img8/location1.png';
 import img9 from '../img/img9/category1png';
 
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 export default function Item(props){
     return(
@@ -35,6 +35,7 @@ border-radius: 4px;
 overflow: hidden;
 box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 animation: fadeInUp 0.6s forwards;
+transition: all 0.4s ease-in-out;
 cursor: pointer;
 &:hover {
       background: #79868f; 
@@ -55,4 +56,31 @@ cursor: pointer;
   .product:nth-child(3) {
     animation-delay: 0.4s;
   }
+  @keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+  }
+  
+  h1{
+    font-size: 24px;
+	  margin: 10px 0 0 0;
+	  font-weight: lighter;
+	  text-transform: uppercase;
+  }
+  p{
+    font-size: 12px;
+	font-weight: light;
+  }
+
+  
+}
 `;
