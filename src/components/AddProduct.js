@@ -1,10 +1,12 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
 import axios from "axios";
+import {useHistory} from 'react-router-dom';
 
 import styled from "styled-components";
 
 export default function AddProduct({ setNewProductId }) {
+    const history=useHistory()
   function handleSubmit(values, actions) {
     values.user_id = 1;
     axios
@@ -15,6 +17,8 @@ export default function AddProduct({ setNewProductId }) {
       .then(res => {
         setNewProductId(res.data);
         actions.resetForm();
+        history.push("/products")
+
       })
       .catch(error => {
         console.log(error.message);
