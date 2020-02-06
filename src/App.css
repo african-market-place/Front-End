@@ -59,6 +59,7 @@ form {
   transition: box-shadow 0.3s ease, border 0.3s; 
   box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
   
+  
 }
 .product-list-wrapper {
   box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
@@ -75,14 +76,14 @@ form {
 .product-list-wrapper .pill {
   /* color: #fff; */
 	position: relative;
-	top: 5px;
+	top: 7px;
 	left: 5px;
 	background-color: #aa8553;
-	font-size: 0.8125em;
-	line-height: 1.5em;
+	font-size: 0.9125em;
+	line-height: 1.7em;
 	height: 1.5em;
-	padding: 5px 5px;
-	border-radius: 4px;
+	padding: 4px 4px;
+	border-radius: 3px;
 	letter-spacing: .03em;
 	z-index: 5000;
   text-transform: uppercase;
@@ -104,3 +105,17 @@ form {
   padding:2px;
   margin:0 auto;
 }
+
+.card-img {
+width: 150px;
+height: 150px;
+box-sizing: border-box;
+border: 5px white solid;
+border-radius: 50%;
+overflow: hidden;
+box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+transform: translatey(1px);
+animation: float 6s ease-in-out infinite;
+img { width: 100%; height: auto; }
+}
+/*&#8358;*/
