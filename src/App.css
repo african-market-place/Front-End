@@ -7,6 +7,8 @@
 body {
   font-family:'Oswald', sans-serif;
   background: #bdc3c7;
+  margin-top: 30px;
+	margin-left: 30px;
 
 }
 
@@ -54,7 +56,9 @@ form {
   border-radius: 6px;
   position: relative;
   margin-right: 0 auto;
-  /* height: 22.5rem; */
+  transition: box-shadow 0.3s ease, border 0.3s; 
+  box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+  
 }
 .product-list-wrapper {
   box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
@@ -63,11 +67,13 @@ form {
   text-decoration: none;
   transition: color 0.3s ease;
   border-bottom: none; 
-  color: #525c65;
+  display: block;
+	height: 20%;
 }
+
 .product-list-wrapper h1{
   height: 200px;
-  background-image: url('https://unsplash.com/photos/5eGas109xp4');
+  background-image: url('https://unsplash.com/photos/5eGas109xp4.png');
   background-repeat: no-repeat;
   background-position: center center;
 
@@ -81,8 +87,8 @@ form {
 	width: 100%;
 	z-index: 4000;
 }
-.pill {
-  color: #fff;
+.product-list-wrapper .pill {
+  /* color: #fff; */
 	position: relative;
 	top: 5px;
 	left: 5px;
@@ -96,4 +102,20 @@ form {
 	z-index: 5000;
   text-transform: uppercase;
   box-shadow: 4px 6px 8px 0px rgba(46,61,73,0.2);
+}
+.product-list-wrapper .place{
+  position: relative;
+  padding: 1em;
+	font-size: 20px;
+	line-height: 1.5em;
+	font-weight: 300;
+	text-transform: capitalize;
+	margin: 0;
+	color: #aa8553;
+	letter-spacing: .03em;
+}
+
+.place img {
+  padding:2px;
+  margin:0 auto;
 }
