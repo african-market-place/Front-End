@@ -127,7 +127,7 @@ export default function AddProduct({setNewProductId}){
             <div className="addProduct">
            
             <Formik
-            initialValues={{name:'', product:'',description:'',price:'',location:'',category:''}}
+            initialValues={{name:'',description:'',price:'',location:'',category:''}}
             onSubmit={handleSubmit}
             render={props =>(
                 <Form>
