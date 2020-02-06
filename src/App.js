@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import Product from './components/Product';
 import ProductList from './components/ProductList';
 import LoginForm from "./components/login/loginPage";
+import SignUpForm from './components/login/signUp'
 import "./App.css";
 import AddProduct from './components/AddProduct';
 
@@ -42,6 +43,7 @@ function App() {
           <AddProduct products={products} setNewProductId={setNewProductId} />
         </Route>
         <Route path="/login" component={LoginForm}/>
+        <Route path="/signUp" component={SignUpForm}/>
       </Switch>
     </Router>
     
