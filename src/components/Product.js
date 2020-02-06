@@ -1,5 +1,8 @@
 import React from 'react';
-import img8 from '../img/img8/compass-32.png';
+
+import img8 from '../img/img8/location1.png';
+import img9 from '../img/img9/category1png';
+
 import styled from "styled-components";
 
 export default function Item(props){
@@ -8,7 +11,7 @@ export default function Item(props){
             <h1>{props.product.name}</h1>
             <p className="pill"> ${props.product.price}</p>
             <p className="place"><img src={img8} alt="Home" className="navbar-img1"></img>{props.product.location}</p>
-            <p className="group">Category:{props.product.category}</p>
+            <p className="group"><img src={img9} alt="Home" className="navbar-img1"></img>{props.product.category}</p>
         </Product>
     );
 }
