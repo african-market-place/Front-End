@@ -71,22 +71,7 @@ form {
 	height: 20%;
 }
 
-.product-list-wrapper h1{
-  height: 200px;
-  background-image: url('https://unsplash.com/photos/5eGas109xp4.png');
-  background-repeat: no-repeat;
-  background-position: center center;
 
-  border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
-}
-.product-list-wrapper h1{
-  border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
-	height: 9.75em;
-	width: 100%;
-	z-index: 4000;
-}
 .product-list-wrapper .pill {
   /* color: #fff; */
 	position: relative;
