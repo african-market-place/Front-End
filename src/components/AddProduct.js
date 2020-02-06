@@ -109,6 +109,15 @@ const StyledAdd = styled.div`
     flex-flow: column nowrap;
     margin: 16px auto;
 
+    input {
+    width: 255px;
+    padding: 15px 20px;
+    margin: 20px 15px;
+    box-sizing: border-box;
+    border: 2px solid #a8c0ff;
+    border-radius: 3px;
+  }
+
     & button {
       border-radius: 3px;
       /* padding:5px; */
@@ -126,14 +135,7 @@ const StyledAdd = styled.div`
         text-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.12),
           0 2px 3px 2px rgba(0, 0, 0, 0.24);
       }
-      field {
-    width: 255px;
-    padding: 15px 20px;
-    margin: 20px 15px;
-    box-sizing: border-box;
-    border: 2px solid #a8c0ff;
-    border-radius: 3px;
-  }
+      
     }
   }
 `;
