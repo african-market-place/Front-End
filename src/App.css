@@ -1,17 +1,16 @@
 :root {
-  --mainGray:#bdc3c7;
-  --white:#F0F2F0;
+  --mainGray: #bdc3c7;
+  --white: #f0f2f0;
 }
-
 
 body {
-  font-family:'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   background: #bdc3c7;
-
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
-
-.home-image{
+.home-image {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -41,11 +40,9 @@ form {
 
 .product-list-wrapper {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   margin: 5%;
 }
-
-
 
 /* ROYAL KITCHEN UI */
 
@@ -54,46 +51,66 @@ form {
   border-radius: 6px;
   position: relative;
   margin-right: 0 auto;
-  /* height: 22.5rem; */
+  transition: box-shadow 0.3s ease, border 0.3s;
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
 }
 .product-list-wrapper {
-  box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
+  box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
 }
-.product-list-wrapper p{
+.product-list-wrapper p {
   text-decoration: none;
   transition: color 0.3s ease;
-  border-bottom: none; 
-  color: #525c65;
+  border-bottom: none;
+  display: block;
+  height: 20%;
 }
-.product-list-wrapper h1{
-  height: 200px;
-  background-image: url('https://unsplash.com/photos/5eGas109xp4');
-  background-repeat: no-repeat;
-  background-position: center center;
 
-  border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
-}
-.product-list-wrapper h1{
-  border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
-	height: 9.75em;
-	width: 100%;
-	z-index: 4000;
-}
-.pill {
-  color: #fff;
-	position: relative;
-	top: 5px;
-	left: 5px;
-	background-color: #aa8553;
-	font-size: 0.8125em;
-	line-height: 1.5em;
-	height: 1.5em;
-	padding: 5px 5px;
-	border-radius: 4px;
-	letter-spacing: .03em;
-	z-index: 5000;
+.product-list-wrapper .pill {
+  /* color: #fff; */
+  position: relative;
+  top: 7px;
+  left: 5px;
+  background-color: #aa8553;
+  font-size: 0.9125em;
+  line-height: 1.7em;
+  height: 1.5em;
+  padding: 4px 4px;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+  z-index: 5000;
   text-transform: uppercase;
-  box-shadow: 4px 6px 8px 0px rgba(46,61,73,0.2);
+  box-shadow: 4px 6px 8px 0px rgba(46, 61, 73, 0.2);
 }
+.product-list-wrapper .place {
+  position: relative;
+  padding: 1em;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin: 0;
+  color: #aa8553;
+  letter-spacing: 0.03em;
+}
+
+.place img {
+  padding: 2px;
+  margin: 0 auto;
+}
+
+.card-img {
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: 5px white solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(1px);
+  animation: float 6s ease-in-out infinite;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+} */

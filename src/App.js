@@ -18,7 +18,7 @@ function App() {
       .get("https://africanmarketplacebackend.herokuapp.com/api/items")
       .then(response => {
         console.log(response);
-        setProducts(response.data);
+        setProducts(response.data.sort((a,b)=> b.id-a.id));
         // setSearchResults(response.data.results);
       })
       .catch(error => {

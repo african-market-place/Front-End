@@ -1,33 +1,32 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import img from "../img/Africa picture2.png";
-import img1 from "../img/img1/home.png";
-import img3 from "../img/img3/login.png";
-import img4 from "../img/img4/productList.png";
-import img6 from "../img/img6/addProduct.png";
+import img from '../img/Africa picture2.png';
+import img1 from '../img/img1/home1.png';
+// import img2 from '../img/img2/signIn.png';
+import img3 from  '../img/img3/loginUser.png';
+import img4 from '../img/img4/productList.png';
+import img6 from '../img/img6/addProduct.png';
+import img10 from '../img/img10/South-Africa-32.png';
 
 import styled from "styled-components";
 
-function Nav() {
-  return (
-    <NavBar>
-      <img src={img} alt="Africa" className="navbar-logo" />
-      <h1> Africa MarketPlace</h1>
-      <NavLink to="/">
-        <img src={img1} alt="Home" className="navbar-img1"></img>
-      </NavLink>
-      <NavLink to="/login">
-        <img src={img3} alt="Login" className="navbar-img3"></img>
-      </NavLink>
-      <NavLink to="/add-product">
-        <img src={img6} alt="addProduct" className="navbar-img6"></img>
-      </NavLink>
-      <NavLink to="/products">
-        <img src={img4} alt="ProductList" className="navbar-img4"></img>
-      </NavLink>
-    </NavBar>
-  );
+ function Nav(){
+
+    //  function handleSubmit(){
+
+    //  }
+
+    return(
+       <NavBar>
+           <img src={img}alt="Africa" className="navbar-logo"/>
+           <h1><img src={img10} alt="flag" className="navbar-img10"></img> Africa MarketPlace</h1>
+           <NavLink to="/"><img src={img1} alt="Home" className="navbar-img1"></img></NavLink>
+           <NavLink to="/login"><img src={img3} alt="Login" className="navbar-img3"></img></NavLink>
+           <NavLink to="/add-product"><img src={img6} alt="addProduct" className="navbar-img6"></img></NavLink>
+           <NavLink to="/products"><img src={img4} alt="ProductList" className="navbar-img4"></img></NavLink>
+       </NavBar>
+    );
 }
 
 export default Nav;
