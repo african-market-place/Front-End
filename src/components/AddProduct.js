@@ -117,6 +117,10 @@ const StyledAdd = styled.div`
     border: 2px solid #a8c0ff;
     border-radius: 3px;
   }
+    label {
+      color: white;
+      text-shadow: 2px 2px 2px black;
+    }
 
     & button {
       border-radius: 3px;
@@ -128,6 +132,7 @@ const StyledAdd = styled.div`
       box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.12),
         0 2px 2px 1px rgba(0, 0, 0, 0.24);
       transition: all 0.2 ease-in;
+      color: white;
 
       &:hover {
         cursor: pointer;

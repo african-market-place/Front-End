@@ -4,7 +4,7 @@ import React from 'react';
 import img8 from '../img/img8/location1.png';
 import img9 from '../img/img9/category1png';
 
-import styled, {keyframes} from "styled-components";
+import styled from "styled-components";
 
 export default function Item(props){
     return(
